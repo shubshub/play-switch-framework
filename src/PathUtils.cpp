@@ -85,7 +85,7 @@ fs::path PathUtils::GetCachePath()
 	return fs::path(directory);
 }
 
-#elif defined(__ANDROID__)
+#elif defined(__ANDROID__) || defined(__SWITCH__)
 
 static fs::path s_filesDirPath;
 static fs::path s_cacheDirPath;
